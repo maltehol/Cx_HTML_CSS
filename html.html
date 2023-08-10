@@ -1,73 +1,109 @@
-Grundlagen Hypertext Markup Language
-Hypertext Markup Language
-Die Hypertext Markup Language (HTML, englisch für Hypertext-Auszeichnungssprache) ist eine textbasierte
-Auszeichnungssprache zur Strukturierung elektronischer Dokumente wie Texte mit Hyperlinks, Bildern und anderen Inhalten.
-HTML-Dokumente sind die Grundlage des World Wide Web und werden von Webbrowsern dargestellt. Neben den vom Browser
-angezeigten Inhalten können HTML-Dateien zusätzliche Angaben in Form von Metainformationen enthalten, z. B. über die im
-Text verwendeten Sprachen, den Autor oder den zusammengefassten Inhalt des Textes. HTML wird vom World Wide Web
-Consortium (W3C) und der Web Hypertext Application Technology Working Group (WHATWG) weiterentwickelt. Die aktuelle
-Version ist seit dem 14. Dezember 2017 HTML 5.2,[4] die bereits von vielen aktuellen Webbrowsern und anderen
-Layout-Engines unterstützt wird. Auch die Extensible Hypertext Markup Language (XHTML) wird durch HTML5 ersetzt.[5]
-HTML dient als Auszeichnungssprache dazu, einen Text semantisch zu strukturieren, nicht aber zu formatieren.[6] Die
-visuelle Darstellung ist nicht Teil der HTML-Spezifikationen und wird durch den Webbrowser und Gestaltungsvorlagen wie
-CSS bestimmt. Ausnahme sind die als veraltet (englisch deprecated) markierten präsentationsbezogenen Elemente.
+<html lang="de">
+<head><title>Grundlagen Hypertext Markup Language</title></head>
+<body>
+<header>
+    <h1>Grundlagen Hypertext Markup Language</h1>
+</header>
+<article>
+    <h2>Hypertext Markup Language</h2>
+    <p>
+        Die Hypertext Markup Language (HTML, englisch für Hypertext-Auszeichnungssprache) ist eine textbasierte
+        Auszeichnungssprache zur Strukturierung elektronischer Dokumente wie Texte mit Hyperlinks, Bildern und anderen
+        Inhalten. HTML-Dokumente sind die Grundlage des World Wide Web und werden von Webbrowsern dargestellt. Neben den
+        vom Browser angezeigten Inhalten können HTML-Dateien zusätzliche Angaben in Form von Metainformationen
+        enthalten, z. B. über die im Text verwendeten Sprachen, den Autor oder den zusammengefassten Inhalt des Textes.
 
-Entstehung
-Vor der Entwicklung des World Wide Web und dessen Bestandteilen, zu denen auch HTML gehört, war es nicht möglich,
-Dokumente auf elektronischem Weg einfach, schnell und strukturiert zwischen mehreren Personen auszutauschen und
-miteinander effizient zu verknüpfen. Man benötigte neben Übertragungsprotokollen auch eine einfach zu verstehende
-Textauszeichnungssprache. Genau hier lag der Ansatzpunkt von HTML. Um Forschungsergebnisse mit anderen Mitarbeitern
-der Europäischen Organisation für Kernforschung (CERN) zu teilen und von den beiden Standorten in Frankreich und in der
-Schweiz aus zugänglich zu machen, entstand 1989 am CERN ein Projekt, welches sich mit der Lösung dieser Aufgabe
-beschäftigte. Am 3. November 1992 erschien die erste Version der HTML-Spezifikation.
+        HTML wird vom World Wide Web Consortium (W3C) und der Web Hypertext Application Technology Working Group
+        (WHATWG) weiterentwickelt. Die aktuelle Version ist seit dem 14. Dezember 2017 HTML 5.2,[4] die bereits von
+        vielen aktuellen Webbrowsern und anderen Layout-Engines unterstützt wird. Auch die Extensible Hypertext Markup
+        Language (XHTML) wird durch HTML5 ersetzt.[5]
 
-Syntax
-Dem Text wird durch Auszeichnungen (englisch markup) von Textteilen eine Struktur gegeben.
+        HTML dient als Auszeichnungssprache dazu, einen Text semantisch zu strukturieren, nicht aber zu formatieren.[6]
+        Die visuelle Darstellung ist nicht Teil der HTML-Spezifikationen und wird durch den Webbrowser und
+        Gestaltungsvorlagen wie CSS bestimmt. Ausnahme sind die als veraltet (englisch deprecated) markierten
+        präsentationsbezogenen Elemente.
+    </p>
+    <h2>Entstehung</h2>
+    <p>
+        Vor der Entwicklung des World Wide Web und dessen Bestandteilen, zu denen auch HTML gehört, war es nicht
+        möglich, Dokumente auf elektronischem Weg einfach, schnell und strukturiert zwischen mehreren Personen
+        auszutauschen und miteinander effizient zu verknüpfen. Man benötigte neben Übertragungsprotokollen auch eine
+        einfach zu verstehende Textauszeichnungssprache. Genau hier lag der Ansatzpunkt von HTML. Um
+        Forschungsergebnisse mit anderen Mitarbeitern der Europäischen Organisation für Kernforschung (CERN) zu teilen
+        und von den beiden Standorten in Frankreich und in der Schweiz aus zugänglich zu machen, entstand 1989 am CERN
+        ein Projekt, welches sich mit der Lösung dieser Aufgabe beschäftigte. Am 3. November 1992 erschien die erste
+        Version der HTML-Spezifikation.
+    </p>
+    <h2>Syntax</h2>
+    <p>
+        Dem Text wird durch Auszeichnungen (englisch markup) von Textteilen eine Struktur gegeben.
+    </p>
+    <p>
+        Die Auszeichnung erfolgt durch genormte (SGML) Elemente. Die meisten dieser HTML-Elemente werden durch ein
+        Tag-Paar markiert, das heißt durch einen Starttag und einen Endtag. Ein Starttag beginnt immer mit dem Zeichen
+        <code>&lt;</code>. Es folgt der Elementname (z. B. p für einen Absatz oder h1 für eine Überschrift erster
+        Ordnung) und optional
+        eine Liste seiner Attribute (z. B. class="warning" oder id="warning"). Mit einem > wird der Starttag
+        geschlossen. Ein Endtag besteht aus den Zeichen <code>&lt;/</code>, dem Elementnamen und dem abschließenden >.
+        Die
+        zusammengehörenden Start- und Endtags bilden zusammen mit dem dazwischenliegenden Inhalt ein Element allgemeiner
+        SGML-Spezifikation. Diese Elemente lassen sich nach Regeln, die in einer Dokumenttypdefinition (DTD) angegeben
+        sind,
+        verschachteln:
+    </p>
+    <pre><code>
+        &lt;p>Ein Textabsatz, der ein &lt;em>betontes&lt;/em> Wort enthält.&lt;/p>
+    </code></pre>
 
-Die Auszeichnung erfolgt durch genormte (SGML) Elemente. Die meisten dieser HTML-Elemente werden durch ein Tag-Paar
-markiert, das heißt durch einen Starttag und einen Endtag. Ein Starttag beginnt immer mit dem Zeichen <. Es folgt der
-Elementname (z. B. p für einen Absatz oder h1 für eine Überschrift erster Ordnung) und optional eine Liste seiner
-Attribute (z. B. class="warning" oder id="warning"). Mit einem > wird der Starttag geschlossen. Ein Endtag besteht aus
-den Zeichen </, dem Elementnamen und dem abschließenden >. Die zusammengehörenden Start- und Endtags bilden zusammen mit
-dem dazwischenliegenden Inhalt ein Element allgemeiner SGML-Spezifikation. Diese Elemente lassen sich nach Regeln, die
-in einer Dokumenttypdefinition (DTD) angegeben sind, verschachteln:
+    <p>
+        Bestimmte Elemente müssen nicht explizit notiert werden. Bei einigen Elementen darf gemäß der SGML-Regel
+        „OMITTAG“ der Endtag fehlen (z. B. <code>&lt;/p></code> oder <code>&lt;/li></code>). Zudem spielt bei Element-
+        und Attributnamen Groß- und Kleinschreibung keine Rolle (z. B.<code>&lt;ul></code>,<code>&lt;UL></code>,<code>&lt;uL></code>).
+        Zum Vergleich: In XHTML sind diese Regeln strenger verfasst.
 
-
-<p>Ein Textabsatz, der ein <em>betontes</em> Wort enthält.</p>
-
-
-Bestimmte Elemente müssen nicht explizit notiert werden. Bei einigen Elementen darf gemäß der SGML-Regel „OMITTAG“ der
-Endtag fehlen. Zudem spielt bei Element- und Attributnamen Groß- und Kleinschreibung keine Rolle.
-Zum Vergleich: In XHTML sind diese Regeln strenger verfasst.
-
-    Neben Elementen mit Start- und Endtag gibt es in HTML auch inhaltsleere Elemente, wie etwa Zeilenumbrüche (br) oder
-    Bilder (img).
-
-
-    Eine Textzeile,<br>die hier fortgesetzt wird.
-    <img src="E-Mail-Button.jpg" alt="E-Mail">
-
-
-    Es geht in HTML um beschreibende (englisch descriptive), nicht um verfahrens- (englisch procedural) und
-    darstellungsorientierte (englisch presentational) Textauszeichnung, auch wenn sich HTML in früheren Versionen dafür
-    verwenden ließ. HTML-Elemente sind keine Angaben zur Präsentation, die dem Webbrowser mitteilen, wie er den Text
-    visuell zu formatieren hat. Vielmehr sind Elemente eine strukturierende Auszeichnung, mit der sich Textbereichen eine
-    Bedeutung zuordnen lässt, z. B. h1 für eine Überschrift, p für einen Textabsatz und em für
-    betonten Text. Wie diese Bedeutung letztlich dem Benutzer vermittelt wird (im Falle einer Überschrift z. B. durch
-    vergrößerte, fette Schrift), ist zunächst dem Webbrowser überlassen und hängt von der Ausgabe-Umgebung ab. Denn
-    obwohl HTML-Dokumente in der Regel auf Computerbildschirmen dargestellt werden, können sie auch auf anderen Medien
-    ausgegeben werden, etwa auf Papier oder mittels Sprachausgabe. CSS-Formatvorlagen eignen sich dazu, um auf die
-    Präsentation eines HTML-Dokuments in verschiedenen Medien Einfluss zu nehmen.
-
-    Daher gelten Elemente und Attribute zur Präsentation wie font,u und noshade als veraltet (englisch
-    deprecated) und sollen nach allgemeiner Auffassung vermieden werden; sie sollten in neu entwickelter Software nicht
-    mehr verwendet und bei der Überarbeitung der dokumentengenerienden Software ersetzt werden.
-
-    Das Einlesen des Quelltextes sowie das Verarbeiten der vorhandenen Informationen wird in der Fachsprache auch als
-    Parsen bezeichnet, und die Aufbereitung für das Ausgabemedium als Rendern. Die Sprache HTML beschreibt, wie der
-    Browser (oder ein anderes Programm, wie z. B. ein Texteditor) die Auszeichnungen des Textes zu „verstehen“ hat,
-    nicht, wie er sie dann in der Darstellung umsetzt. So besagt zwar, dass eine Überschrift folgt, nicht aber, in
-    welcher Schriftgröße oder Schriftschnitt diese darzustellen ist – hier haben sich nur gewisse übliche
-    Standardeinstellungen eingebürgert, die aber nicht Teil der HTML-Spezifikation sind.
-
-    Dieser Inhalt wurde aus Wikipedia kopiert
+    </p>
+    <p>
+        Neben Elementen mit Start- und Endtag gibt es in HTML auch inhaltsleere Elemente, wie etwa
+        Zeilenumbrüche (br) oder Bilder (img).
+    </p>
+    <pre><code>
+        Eine Textzeile,&lt;br>die hier fortgesetzt wird.
+        &lt;img src="E-Mail-Button.jpg" alt="E-Mail">
+    </code></pre>
+    <p>
+        Es geht in HTML um beschreibende (englisch descriptive), nicht um verfahrens- (englisch procedural)
+        und darstellungsorientierte (englisch presentational) Textauszeichnung, auch wenn sich HTML in
+        früheren Versionen dafür verwenden ließ. HTML-Elemente sind keine Angaben zur Präsentation, die dem
+        Webbrowser mitteilen, wie er den Text visuell zu formatieren hat. Vielmehr sind Elemente eine
+        strukturierende Auszeichnung, mit der sich Textbereichen eine Bedeutung zuordnen lässt, z. B.
+        &lt;h1>…&lt;/h1> für eine Überschrift, &lt;p>…&lt;/p> für einen Textabsatz und &lt;em>…&lt;/em> für betonten
+        Text. Wie
+        diese Bedeutung letztlich dem Benutzer vermittelt wird (im Falle einer Überschrift z. B. durch
+        vergrößerte, fette Schrift), ist zunächst dem Webbrowser überlassen und hängt von der Ausgabe-Umgebung
+        ab. Denn obwohl HTML-Dokumente in der Regel auf Computerbildschirmen dargestellt werden, können sie auch
+        auf anderen Medien ausgegeben werden, etwa auf Papier oder mittels Sprachausgabe. CSS-Formatvorlagen
+        eignen sich dazu, um auf die Präsentation eines HTML-Dokuments in verschiedenen Medien Einfluss zu
+        nehmen.
+    </p>
+    <p>
+        Daher gelten Elemente und Attribute zur Präsentation wie
+        <code>&lt;font>…&lt;/font></code>,<code>&lt;u>…&lt;/u></code>
+        und noshade als veraltet (englisch deprecated) und sollen nach allgemeiner Auffassung vermieden werden;
+        sie sollten in neu entwickelter Software nicht mehr verwendet und bei der Überarbeitung der
+        dokumentengenerienden Software ersetzt werden.
+    </p>
+    <p>
+        Das Einlesen des Quelltextes sowie das Verarbeiten der vorhandenen Informationen wird in der
+        Fachsprache auch als Parsen bezeichnet, und die Aufbereitung für das Ausgabemedium als Rendern. Die
+        Sprache HTML beschreibt, wie der Browser (oder ein anderes Programm, wie z. B. ein Texteditor) die
+        Auszeichnungen des Textes zu „verstehen“ hat, nicht, wie er sie dann in der Darstellung umsetzt. So
+        besagt zwar, dass eine Überschrift folgt, nicht aber, in welcher Schriftgröße oder Schriftschnitt diese
+        darzustellen ist – hier haben sich nur gewisse übliche Standardeinstellungen eingebürgert, die aber
+        nicht Teil der HTML-Spezifikation sind.
+    </p>
+</article>
+<footer>
+    Dieser Inhalt wurde aus <a href="https://de.wikipedia.org/wiki/Hypertext_Markup_Language">Wikipedia</a> kopiert
+</footer>
+</body>
+</html>

@@ -1,77 +1,103 @@
-Grundlagen Cascading Style Sheets
-Cascading Style Sheets
-Cascading Style Sheets (englische Aussprache [kæsˌkeɪdɪŋˈstaɪlʃiːts]; für ‚gestufte Gestaltungsbögen‘; kurz: CSS) ist
-eine Stylesheet-Sprache für elektronische Dokumente und zusammen mit HTML und JavaScript eine der Kernsprachen des
-World Wide Webs.[1] Sie ist ein sogenannter living standard ‚lebendiger Standard‘ und wird vom World Wide Web Consortium
-(W3C) beständig weiterentwickelt. Mit CSS werden Gestaltungsanweisungen erstellt, die vor allem zusammen mit den
-Auszeichnungssprachen HTML und XML (zum Beispiel bei SVG) eingesetzt werden.
+<html lang="de">
+<head><title>Grundlagen Cascading Style Sheets</title></head>
+<body>
+<header>
+    <h1>Grundlagen Cascading Style Sheets</h1>
+</header>
+<article>
+    <h2>Cascading Style Sheets </h2>
+    <p>
+        Cascading Style Sheets (englische Aussprache [kæsˌkeɪdɪŋˈstaɪlʃiːts]; für ‚gestufte Gestaltungsbögen‘; kurz:
+        CSS) ist eine Stylesheet-Sprache für elektronische Dokumente und zusammen mit HTML und JavaScript eine der
+        Kernsprachen des World Wide Webs.[1] Sie ist ein sogenannter living standard ‚lebendiger Standard‘ und wird vom
+        World Wide Web Consortium (W3C) beständig weiterentwickelt. Mit CSS werden Gestaltungsanweisungen erstellt, die
+        vor allem zusammen mit den Auszeichnungssprachen HTML und XML (zum Beispiel bei SVG) eingesetzt werden.
+    </p>
+    <h3>Grundlagen</h3>
+    <p>
+        CSS wurde entworfen, um Darstellungsvorgaben weitgehend von den Inhalten zu trennen. Wenn diese Trennung
+        konsequent vollzogen wird, werden nur noch die inhaltliche Gliederung eines Dokumentes und die Bedeutung seiner
+        Teile in HTML oder XML beschrieben, während mit CSS gesondert davon, vorzugsweise in separaten CSS-Dateien, die
+        Darstellung der Inhalte festgelegt wird (z. B. Layout, Farben und Typografie). Gab es anfangs nur einfache
+        Darstellungsanweisungen, so wurden im Verlauf komplexere Module hinzugefügt, mit denen z. B. Animationen und für
+        verschiedene Ausgabemedien verschiedene Darstellungen definiert werden können.
+    </p>
+    <p>
+        Elemente eines Dokumentes können aufgrund verschiedener Eigenschaften identifiziert werden. Dazu zählen neben
+        dem Elementnamen (z. B. a für alle Hyperlinks), ihrer ID und ihrer Position innerhalb des Dokumentes (z. B. alle
+        Bildelemente innerhalb von Linkelementen) auch Details wie Attribute (z. B. alle Linkelemente, deren
+        href-Attribut mit www.example.com beginnen) oder die Position in einer Menge von Elementen (z. B. jedes ungerade
+        Element einer Liste). Mit CSS-Anweisungen können für jede solcher Elementgruppen Vorgaben für die Darstellung
+        festgelegt werden. Diese Festlegungen können zentral erfolgen, auch in separaten Dateien, sodass sie leichter
+        für andere Dokumente wiederverwendet werden können. Außerdem enthält CSS ein Vererbungsmodell für
+        Auszeichnungsattribute, das die Anzahl erforderlicher Definitionen vermindert.
+    </p>
+    <p>
+        Mit CSS können für verschiedene Ausgabemedien (Bildschirm, Papier, Projektion, Sprache) unterschiedliche
+        Darstellungen vorgegeben werden. Das ist nützlich, um z. B. die Verweisadressen von Hyperlinks beim Drucken
+        aufzuführen, und um für Geräte wie PDAs und Mobiltelefone, die kleine Displays oder eine geringe Bildauflösung
+        haben, Darstellungen anzubieten, die schmal genug und nicht zu hoch sind, um auf solchen Geräten lesbar zu
+        bleiben.
+    </p>
+    <p>
+        CSS ist die Standard-Stylesheet-Sprache im World Wide Web. Früher übliche, darstellungsorientierte HTML-Elemente
+        wie font oder center gelten als „veraltet“ (englisch obsolete), das heißt, sie sollen in Zukunft aus dem
+        HTML-Standard entfernt werden.[2] So gelten diese unter anderem seit HTML 4 (1997) als „unerwünscht“ und mit
+        HTML5 als missbilligt (englisch deprecated).[3]
+    </p>
 
-Grundlagen
-CSS wurde entworfen, um Darstellungsvorgaben weitgehend von den Inhalten zu trennen. Wenn diese Trennung konsequent
-vollzogen wird, werden nur noch die inhaltliche Gliederung eines Dokumentes und die Bedeutung seiner Teile in HTML
-oder XML beschrieben, während mit CSS gesondert davon, vorzugsweise in separaten CSS-Dateien, die Darstellung der
-Inhalte festgelegt wird (z. B. Layout, Farben und Typografie). Gab es anfangs nur einfache Darstellungsanweisungen,
-so wurden im Verlauf komplexere Module hinzugefügt, mit denen z. B. Animationen und für verschiedene Ausgabemedien
-verschiedene Darstellungen definiert werden können.
-
-Elemente eines Dokumentes können aufgrund verschiedener Eigenschaften identifiziert werden. Dazu zählen neben dem
-Elementnamen (z. B. a für alle Hyperlinks), ihrer ID und ihrer Position innerhalb des Dokumentes (z. B. alle
-Bildelemente innerhalb von Linkelementen) auch Details wie Attribute (z. B. alle Linkelemente, deren href-Attribut mit
-www.example.com beginnen) oder die Position in einer Menge von Elementen (z. B. jedes ungerade Element einer Liste). Mit
-CSS-Anweisungen können für jede solcher Elementgruppen Vorgaben für die Darstellung festgelegt werden. Diese
-Festlegungen können zentral erfolgen, auch in separaten Dateien, sodass sie leichter für andere Dokumente wiederverwendet
-werden können. Außerdem enthält CSS ein Vererbungsmodell für Auszeichnungsattribute, das die Anzahl erforderlicher
-Definitionen vermindert.
-
-Mit CSS können für verschiedene Ausgabemedien (Bildschirm, Papier, Projektion, Sprache) unterschiedliche Darstellungen
-vorgegeben werden. Das ist nützlich, um z. B. die Verweisadressen von Hyperlinks beim Drucken aufzuführen, und um für
-Geräte wie PDAs und Mobiltelefone, die kleine Displays oder eine geringe Bildauflösung haben, Darstellungen anzubieten,
-die schmal genug und nicht zu hoch sind, um auf solchen Geräten lesbar zu bleiben.
-
-CSS ist die Standard-Stylesheet-Sprache im World Wide Web. Früher übliche, darstellungsorientierte HTML-Elemente wie
-font oder center gelten als „veraltet“ (englisch obsolete), das heißt, sie sollen in Zukunft aus dem HTML-Standard
-entfernt werden.[2] So gelten diese unter anderem seit HTML 4 (1997) als „unerwünscht“ und mit HTML5 als missbilligt
-(englisch deprecated).[3]
-
-Geschichte und Versionen
-Anfänge
-Einen ersten Vorschlag für Web-Stylesheets gab es 1993, mehrere weitere folgten bis 1995. Am 10. Oktober 1994
-veröffentlichte Håkon Wium Lie, ein Mitarbeiter von Tim Berners-Lee am CERN, den ersten Vorschlag für „Cascading HTML
-style sheets“,[4] die er später abgekürzt als „CHSS“ bezeichnet.[5] Bert Bos arbeitete zu dieser Zeit an der
-Implementierung eines Browsers namens Argo, der seine eigene Stylesheet-Sprache benutzte. Die beiden entschieden sich,
-CSS gemeinsam zu entwickeln. Es gab zu dieser Zeit auch andere Sprachen mit dem gleichen Ziel, die Erfinder von CSS
-brachten aber als erste die Idee auf, Regeln zu definieren, die über mehrere Stylesheets hinweg und innerhalb eines
-einzigen Stylesheets darüber entscheiden, welche CSS-Formatierung auf das betreffende Element angewendet werden sollen.
-
-Nach der Präsentation von CSS durch Lie auf der Konferenz „Mosaic and the Web“ in Chicago 1994 und später mit Bos 1995
-wurde das World Wide Web Consortium (W3C) auf CSS aufmerksam. Lie und Bos arbeiteten mit anderen Mitgliedern in diesem
-Rahmen an CSS weiter. Im Dezember 1996 wurde die CSS Level 1 Recommendation publiziert.
-
-CSS2
-CSS Level 2 (CSS2) wurde im Mai 1998 veröffentlicht. Bis Anfang 2010 wurde diese Empfehlung allerdings von keinem
-verbreiteten Webbrowser vollständig umgesetzt. Bereits ab 2002 hat das W3C an der überarbeiteten Version CSS Level 2
-Revision 1 (CSS 2.1) gearbeitet.[6] Die Erfahrungen mit CSS2 wurden hier aufgenommen, Unstimmigkeiten korrigiert und
-manche Teiltechniken gestrichen, die in verschiedenen Browsern nicht korrekt umgesetzt worden waren. Grundlegend neue
-Fähigkeiten wurden nicht eingebaut. Am 7. Juni 2011 wurde CSS 2.1 als fertige Empfehlung (Recommendation)
-veröffentlicht.[7] 2014 verarbeiteten die meisten Webbrowser CSS 2.1 weitgehend korrekt, nur wenige Teiltechniken wurden
-nicht vollständig unterstützt. Im April 2016 wurde der erste öffentliche Arbeitsentwurf von CSS 2.2 veröffentlicht.[8]
-
-CSS3
-Seit 2000 ist CSS Level 3 in der Entwicklung.[9] Hier werden die Entwicklungen weiter vorangetrieben, die bereits mit
-CSS2 begonnen wurden. CSS3 wird im Gegensatz zu den Vorgängern modular aufgebaut sein, womit einzelne Teiltechniken
-(beispielsweise Steuerung der Sprachausgabe oder Selektoren) in eigenen Versionsschritten entwickelt werden können.
-So nähert sich CSS bei seinen Fähigkeiten mehr dem etablierten DSSSL (für SGML) an und wird wohl auch in Zukunft noch
-eine Alternative zu XML-basierten Stylesheet-Sprachen wie XSL-FO sein. Derzeit veröffentlichte und breit unterstützte
-Standards sind unter anderem CSS Color Level 3, CSS Namespaces, Selectors Level 3 und Media Queries. Neben diesen
-Modulen stehen weitere Elemente zur Diskussion, etwa ein Layout-Modul und verschiedene Grafikfilter.[10] Moderne Browser
-unterstützten im Jahr 2014 bereits viele CSS3-Module,[11] obwohl nur für wenige Teile bereits eine Empfehlung
-(Recommendation) durch das W3C vorgelegen hatte.[10] Im Laufe der Zeit gab es immer mehr Funktionen für CSS, sowie
-Empfehlungen vom W3C.
-
-Im Frühjahr 2012 wurde berichtet, das W3C arbeite bereits an einem Nachfolger von CSS3, der mit der Versionsnummer 4
-veröffentlicht werden solle.[12] Im September 2012 haben Vertreter der CSS-Arbeitsgruppe des W3C jedoch klargestellt,
-dass es keine Versionsnummer 4 geben soll: “There will never be a CSS4”.[13] Vielmehr soll die künftige Entwicklung des
-Standards darin bestehen, dass die einzelnen CSS-Module unter eigenen Versionsnummern weiterentwickelt werden können,
-während der Gesamtstandard den Namen CSS3 oder einfach CSS behalten soll.[13]
-
-Dieser Inhalt wurde aus Wikipedia kopiert
+    <h3>Geschichte und Versionen</h3>
+    <h4>Anfänge</h4>
+    <p>
+        Einen ersten Vorschlag für Web-Stylesheets gab es 1993, mehrere weitere folgten bis 1995. Am 10. Oktober 1994
+        veröffentlichte Håkon Wium Lie, ein Mitarbeiter von Tim Berners-Lee am CERN, den ersten Vorschlag für „Cascading
+        HTML style sheets“,[4] die er später abgekürzt als „CHSS“ bezeichnet.[5] Bert Bos arbeitete zu dieser Zeit an
+        der Implementierung eines Browsers namens Argo, der seine eigene Stylesheet-Sprache benutzte. Die beiden
+        entschieden sich, CSS gemeinsam zu entwickeln. Es gab zu dieser Zeit auch andere Sprachen mit dem gleichen Ziel,
+        die Erfinder von CSS brachten aber als erste die Idee auf, Regeln zu definieren, die über mehrere Stylesheets
+        hinweg und innerhalb eines einzigen Stylesheets darüber entscheiden, welche CSS-Formatierung auf das betreffende
+        Element angewendet werden sollen.
+    </p>
+    <p>
+        Nach der Präsentation von CSS durch Lie auf der Konferenz „Mosaic and the Web“ in Chicago 1994 und später mit
+        Bos 1995 wurde das World Wide Web Consortium (W3C) auf CSS aufmerksam. Lie und Bos arbeiteten mit anderen
+        Mitgliedern in diesem Rahmen an CSS weiter. Im Dezember 1996 wurde die CSS Level 1 Recommendation publiziert.
+    </p>
+    <h4>CSS2</h4>
+    <p>
+        CSS Level 2 (CSS2) wurde im Mai 1998 veröffentlicht. Bis Anfang 2010 wurde diese Empfehlung allerdings von
+        keinem verbreiteten Webbrowser vollständig umgesetzt. Bereits ab 2002 hat das W3C an der überarbeiteten Version
+        CSS Level 2 Revision 1 (CSS 2.1) gearbeitet.[6] Die Erfahrungen mit CSS2 wurden hier aufgenommen,
+        Unstimmigkeiten korrigiert und manche Teiltechniken gestrichen, die in verschiedenen Browsern nicht korrekt
+        umgesetzt worden waren. Grundlegend neue Fähigkeiten wurden nicht eingebaut. Am 7. Juni 2011 wurde CSS 2.1 als
+        fertige Empfehlung (Recommendation) veröffentlicht.[7] 2014 verarbeiteten die meisten Webbrowser CSS 2.1
+        weitgehend korrekt, nur wenige Teiltechniken wurden nicht vollständig unterstützt. Im April 2016 wurde der erste
+        öffentliche Arbeitsentwurf von CSS 2.2 veröffentlicht.[8]
+    </p>
+    <h4>CSS3</h4>
+    <p>
+        Seit 2000 ist CSS Level 3 in der Entwicklung.[9] Hier werden die Entwicklungen weiter vorangetrieben, die
+        bereits mit CSS2 begonnen wurden. CSS3 wird im Gegensatz zu den Vorgängern modular aufgebaut sein, womit
+        einzelne Teiltechniken (beispielsweise Steuerung der Sprachausgabe oder Selektoren) in eigenen Versionsschritten
+        entwickelt werden können. So nähert sich CSS bei seinen Fähigkeiten mehr dem etablierten DSSSL (für SGML) an und
+        wird wohl auch in Zukunft noch eine Alternative zu XML-basierten Stylesheet-Sprachen wie XSL-FO sein. Derzeit
+        veröffentlichte und breit unterstützte Standards sind unter anderem CSS Color Level 3, CSS Namespaces, Selectors
+        Level 3 und Media Queries. Neben diesen Modulen stehen weitere Elemente zur Diskussion, etwa ein Layout-Modul
+        und verschiedene Grafikfilter.[10] Moderne Browser unterstützten im Jahr 2014 bereits viele CSS3-Module,[11]
+        obwohl nur für wenige Teile bereits eine Empfehlung (Recommendation) durch das W3C vorgelegen hatte.[10] Im
+        Laufe der Zeit gab es immer mehr Funktionen für CSS, sowie Empfehlungen vom W3C.
+    </p>
+    <p>
+        Im Frühjahr 2012 wurde berichtet, das W3C arbeite bereits an einem Nachfolger von CSS3, der mit der
+        Versionsnummer 4 veröffentlicht werden solle.[12] Im September 2012 haben Vertreter der CSS-Arbeitsgruppe des
+        W3C jedoch klargestellt, dass es keine Versionsnummer 4 geben soll: “There will never be a CSS4”.[13] Vielmehr
+        soll die künftige Entwicklung des Standards darin bestehen, dass die einzelnen CSS-Module unter eigenen
+        Versionsnummern weiterentwickelt werden können, während der Gesamtstandard den Namen CSS3 oder einfach CSS
+        behalten soll.[13]
+    </p>
+</article>
+<footer>
+    Dieser Inhalt wurde aus <a href="https://de.wikipedia.org/wiki/Cascading_Style_Sheets">Wikipedia</a> kopiert
+</footer>
+</body>
+</html>
