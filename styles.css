@@ -1,0 +1,70 @@
+html, body {
+    /* Resette die standard Broswer Abstände */
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+body {
+    max-width: 80ch;
+    margin-inline: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0;
+}
+
+h1 {
+    color: brown;
+    font-size: 4rem;
+}
+
+h2 {
+    color: #3deadc;
+    font-size: 3rem;
+}
+
+h3 {
+    color: #ffc100;
+    font-size: 2rem;
+}
+
+h4 {
+    color: #2fff00;
+    font-size: 1.2rem;
+}
+
+p {
+    font-size: 1.2rem
+}
+
+
+code, pre {
+    background: #eaeaea
+}
+
+
+article {
+    border: 2px solid lightgray;
+    border-radius: 3px;
+    padding: .5rem;
+    margin-block: 1rem;
+}
+
+.article-1 {
+    border: 2px solid greenyellow;
+}
+
+.article-2 {
+    background: lightcyan;
+}
+
+footer {
+    position: sticky;
+    bottom: 0;
+    background: aliceblue;
+    height: 2rem;
+    padding: .5rem;
+    text-align: center;
+    line-height: 2rem;
+}
